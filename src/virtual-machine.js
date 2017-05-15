@@ -211,6 +211,7 @@ VirtualMachine.prototype.fromJSON = function (json) {
 VirtualMachine.prototype.addSprite2 = function (json) {
     // Select new sprite.
     this.editingTarget = sb2.deserialize(json, this.runtime, true);
+    //console.log(this.editingTarget)
     // Update the VM user's knowledge of targets and blocks on the workspace.
     this.emitTargetsUpdate();
     this.emitWorkspaceUpdate();
